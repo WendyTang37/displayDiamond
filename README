@@ -1,0 +1,81 @@
+:browse confirm e
+/*
+ * Filename: README
+ * Author: Wenhui Tang
+ * Userid: cs30xlv
+ * Date: Oct. 16, 2013
+ */
+
+Description: prints a diamond within a square to the screen.
+Compile by: type "make" in the command line to compile
+Run by: typing ./pa1 width height borderCh diamondCh 
+        for example: ./pa1 11 9 42 57
+Normal Output:  
+./pa1 11 9 42 57
+***********
+*****9*****
+****999****
+***99999***
+**9999999**
+*999999999*
+**9999999**
+***99999***
+****999****
+*****9*****
+***********
+
+Abnormal output
+ ./pa1test 999999999999 abc123 20 20
+
+        Converting "999999999999" base "10": Result too large
+
+        "abc123" is not an integer
+
+        border_ch(20) must be an ASCII code in the range [33 - 126]
+
+        diamond_ch(20) must be an ASCII code in the range [33 - 126]
+
+        border_ch(20) and diamond_ch(20) must be different
+
+I tested this program by making unit test cases. I also compared the output of
+the program to the correct output by using diff. 
+
+1) How do you print the value of the string that is the 1st arg in strtol?
+    enter the command "x/s $i0"
+
+2) How do you print the decimal value of the base that is the 3rd arg in strtol?
+    enter the command "p/d $i2"
+
+3) How do you print the hex value of &endptr that is the 2nd arg in strtol?
+    enter the command "p/x $i1"
+
+4) How do you print the value returned by strtol?
+   Show two ways:
+   a) Using the name of the local variable you use to hold the return value
+     enter the command "p/d num"
+
+   b) Displaying the value in the register used to return the value 
+     enter the command "p/d $o0"
+
+5) How do you print the character endptr is pointing to?
+    enter the command "p/c *endptr"
+
+6) How do you print the entire nul-terminated string endptr is pointing to?
+    enter the command "p *endptr@10"
+
+7) How do you print the decimal value of the global variable errno at this 
+   point?
+    enter the command "p/d errno"
+
+8) What is the Git command to show the current state of your working tree?
+    git status
+
+9) What is the Git command to discard any changes made to a file since its last    commit?
+    git reset
+
+10) What is the Git command to display the differences between the local version    of a file and the version last committed?
+    git diff
+
+
+
+
